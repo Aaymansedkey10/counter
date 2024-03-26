@@ -5,7 +5,7 @@ let counter = 0 ;
 
 valueOfNumber.textContent = 0 ;
 decrement.addEventListener('click', ()=>{
-    if (counter == 20) {
+    if (counter == 30) {
         alert("The maximum Number = 30");
     } else {
         counter++;
