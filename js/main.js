@@ -1,6 +1,8 @@
 let valueOfNumber = document.querySelector(".container-value");
 let increment = document.querySelector(".increment");
 let decrement = document.querySelector(".decrement");
+let minNum = document.querySelector(".minNum");
+let maxNum = document.querySelector(".maxNum");
 let counter = 0 ;
 
 valueOfNumber.textContent = 0 ;
@@ -22,4 +24,12 @@ increment.addEventListener('click', ()=>{
         valueOfNumber.textContent = counter ;
         valueOfNumber.style.color = "red";
     }
+});
+maxNum.addEventListener('click' , ()=>{
+        valueOfNumber.textContent = 30;
+        valueOfNumber.style.color = "#0d6efd";  
+});
+minNum.addEventListener('click',()=>{
+        valueOfNumber.textContent = 0 ;
+        valueOfNumber.style.color = "red"; 
 });
