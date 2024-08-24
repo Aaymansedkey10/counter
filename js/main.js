@@ -16,6 +16,7 @@ decrement.addEventListener('click', ()=>{
     }
    
 });
+
 increment.addEventListener('click', ()=>{
     if (counter == 0) {
         alert("This is Minimum Number");
@@ -25,11 +26,15 @@ increment.addEventListener('click', ()=>{
         valueOfNumber.style.color = "red";
     }
 });
+
 maxNum.addEventListener('click' , ()=>{
-        valueOfNumber.textContent = 30;
-        valueOfNumber.style.color = "#0d6efd";  
+    counter = 30 ;
+    valueOfNumber.textContent = counter ;
+    valueOfNumber.style.color = "#0d6efd";  
 });
+
 minNum.addEventListener('click',()=>{
-        valueOfNumber.textContent = 0 ;
-        valueOfNumber.style.color = "red"; 
+    counter = 0 ;
+    valueOfNumber.textContent = counter ;
+    valueOfNumber.style.color = "red"; 
 });
